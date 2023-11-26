@@ -15,7 +15,7 @@ let twCounter: number = 0;
 const twitterFunc = () => {
   // our interval
   const twitterInv = setInterval(() => {
-    twCounter += 100;
+    twCounter += 120;
     twitterCount.textContent = `${twCounter}`;
     // if value equal then stop interval
     if (twCounter === 12000) {
@@ -38,7 +38,7 @@ const youtubeFunc = () => {
     if (ytCounter === 5000) {
       clearInterval(youtubeInv);
     }
-  }, 50);
+  }, 25);
 };
 // facebook increment function
 
@@ -48,7 +48,7 @@ let fbCounter: number = 0;
 const facebookFunc = () => {
   // our interval
   const facebookInv = setInterval(() => {
-    fbCounter += 125;
+    fbCounter += 100;
     facebookCount.textContent = `${fbCounter}`;
     // if value equal then stop interval
     if (fbCounter === 7500) {

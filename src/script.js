@@ -9,7 +9,7 @@ var twCounter = 0;
 var twitterFunc = function () {
     // our interval
     var twitterInv = setInterval(function () {
-        twCounter += 100;
+        twCounter += 120;
         twitterCount.textContent = "".concat(twCounter);
         // if value equal then stop interval
         if (twCounter === 12000) {
@@ -29,7 +29,7 @@ var youtubeFunc = function () {
         if (ytCounter === 5000) {
             clearInterval(youtubeInv);
         }
-    }, 50);
+    }, 25);
 };
 // facebook increment function
 // creating global varibale
@@ -37,7 +37,7 @@ var fbCounter = 0;
 var facebookFunc = function () {
     // our interval
     var facebookInv = setInterval(function () {
-        fbCounter += 125;
+        fbCounter += 100;
         facebookCount.textContent = "".concat(fbCounter);
         // if value equal then stop interval
         if (fbCounter === 7500) {
